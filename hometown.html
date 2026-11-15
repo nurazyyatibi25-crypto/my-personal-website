@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal website about me, my hometown Semporna, Sabah, and my interests.">
+  <title>My Hometown | Me, My Hometown & Interests</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">little <span>stories.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html" class="" >Home</a>
+<a href="about.html" class="" >About Me</a>
+<a href="hometown.html" class="active" aria-current="page">My Hometown</a>
+<a href="hobbies.html" class="" >Interests</a></nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="page-intro">
+      <span class="eyebrow">A place close to my heart</span>
+      <h1>My Hometown: <em>Semporna</em></h1>
+      <p class="lead">Located on the southeast coast of Sabah, Malaysia, Semporna is a coastal town and a gateway to some of the region's well-known islands and marine attractions.</p>
+    </section>
+    <section class="section">
+      <div class="photo-frame">
+        <img class="feature-image" style="height:390px;margin:0" src="https://live.staticflickr.com/1840/44133450071_2833bf97f4_o.jpg" alt="Semporna City">
+      </div>
+      <p class="small-note">Kredit photo Waterfront: Fabio Achilli, lesen CC BY 2.0..</p>
+    </section>
+    <section class="section split">
+      <div>
+        <span class="eyebrow">About the town</span>
+        <h2>Where the sea meets island life</h2>
+        <p class="muted">Semporna is widely known for its coastal scenery, nearby islands, clear waters and marine biodiversity. The town is an important starting point for visitors exploring the surrounding islands and diving areas.</p>
+        <p class="muted">Its connection to the sea is an important part of local life, including fishing, tourism and the movement of people and goods between the mainland and nearby islands.</p>
+        <div class="tag-list"><span class="tag">Sabah, Malaysia</span><span class="tag">Coastal town</span><span class="tag">Island destination</span></div>
+      </div>
+      <div class="card">
+        <h3>Why I love Semporna</h3>
+        <p class="muted">I appreciate Semporna for its beautiful natural surroundings, peaceful sea views and the special feeling of being connected to the coast. It is a place that reminds me of the beauty of nature.</p>
+        <div class="quote">“The ocean makes me feel calm, grateful and inspired.”</div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <span class="eyebrow">Places to discover</span>
+        <h2>Attractions around Semporna</h2>
+        <p>These are examples of well-known places in the Semporna area. Add your own photos and personal experiences if you have visited them.</p>
+      </div>
+      <div class="grid">
+        <article class="card place-card">
+          <img  class="feature-image" src= https://commons.wikimedia.org/wiki/Special:Redirect/file/Bohey_Dulang_from_Above_(17287121525).jpg alt="Bohey Dulang">
+          <h3>Bohey Dulang</h3><p class="muted">Known for its scenic island landscape and panoramic views from the hiking trail.</p>
+        </article>
+        <article class="card place-card">
+          <img class="feature-image" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80" alt="Underwater coral reef and marine life">
+          <h3>Sipadan Island</h3><p class="muted">A famous diving destination recognised for its rich underwater ecosystem. Access is regulated.</p>
+        </article>
+        <article class="card place-card">
+          <img class="feature-image" src=https://commons.wikimedia.org/wiki/Special:Redirect/file/MabulBorneo.jpg alt="Mabul Island">
+          <h3>Mabul Island</h3><p class="muted">An island destination associated with coastal village life, resorts and marine activities.</p>
+        </article>
+      </div>
+    </section>
+    <section class="banner">
+      <h2>Semporna, a beautiful part of Sabah.</h2>
+      <p>Its sea, islands and coastal atmosphere make it a memorable place to call home.</p>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>© 2026 My Personal Website</span>
+      <span>Made with ♡ and a little creativity</span>
+    </div>
+  </footer>
+  <button class="back-top" type="button" aria-label="Back to top">↑</button>
+
+<script>
+  const menuButton = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuButton && navLinks) {
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+  const backTop = document.querySelector('.back-top');
+  if (backTop) backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+
+</body>
+</html>

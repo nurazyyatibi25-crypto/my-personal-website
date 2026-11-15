@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal website about me, my hometown Semporna, Sabah, and my interests.">
+  <title>My Interests & Hobbies | Me, My Hometown & Interests</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">little <span>stories.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html" class="" >Home</a>
+<a href="about.html" class="" >About Me</a>
+<a href="hometown.html" class="" >My Hometown</a>
+<a href="hobbies.html" class="active" aria-current="page">Interests</a></nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="page-intro">
+      <span class="eyebrow">What I enjoy doing</span>
+      <h1>My Interests <em>&amp; Hobbies</em></h1>
+      <p class="lead">My hobbies help me relax, express myself and enjoy my free time. Here are four activities that I love.</p>
+    </section>
+    <section class="section">
+      <div class="grid">
+        <article class="card hobby-card">
+          <div class="card-icon">📚</div>
+          <h3>Reading</h3>
+          <p class="muted">Reading allows me to explore new ideas, learn useful information and enjoy different stories. It also helps me improve my vocabulary and imagination.</p>
+          <span class="tag">Knowledge & imagination</span>
+        </article>
+        <article class="card hobby-card">
+          <div class="card-icon">🎧</div>
+          <h3>Listening to Music</h3>
+          <p class="muted">I enjoy listening to music because it helps me relax and express my feelings. Different songs can bring different moods and memories.</p>
+          <span class="tag">Relaxation</span>
+        </article>
+        <article class="card hobby-card">
+          <div class="card-icon">🎤</div>
+          <h3>Singing</h3>
+          <p class="muted">Singing is a fun way for me to express myself. I enjoy following the melody and singing along to songs that I like.</p>
+          <span class="tag">Self-expression</span>
+        </article>
+        <article class="card hobby-card">
+          <div class="card-icon">🎨</div>
+          <h3>Drawing</h3>
+          <p class="muted">Drawing gives me a chance to be creative and turn ideas into pictures. I enjoy experimenting with shapes, colours and simple designs.</p>
+          <span class="tag">Creativity</span>
+        </article>
+      </div>
+    </section>
+    <section class="section split">
+      <div>
+        <span class="eyebrow">My creative side</span>
+        <h2>Making time for the things I love</h2>
+        <p class="muted">These hobbies bring balance to my daily routine. Reading helps me learn, music and singing help me unwind, while drawing gives me a creative outlet.</p>
+        <p class="muted">I believe hobbies are important because they allow us to discover our interests, build confidence and enjoy life beyond our daily responsibilities.</p>
+      </div>
+      <div class="photo-frame">
+        <img class="feature-image" style="height:330px;margin:0" src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1000&q=85" alt="Art supplies and colourful painting materials on a table">
+      </div>
+    </section>
+    <section class="banner">
+      <h2>Keep learning. Keep creating. Keep enjoying.</h2>
+      <p>Every hobby is a small way to make everyday life more meaningful.</p>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>© 2026 My Personal Website</span>
+      <span>Made with ♡ and a little creativity</span>
+    </div>
+  </footer>
+  <button class="back-top" type="button" aria-label="Back to top">↑</button>
+
+<script>
+  const menuButton = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuButton && navLinks) {
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+  const backTop = document.querySelector('.back-top');
+  if (backTop) backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+
+</body>
+</html>

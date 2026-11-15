@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal website about me, my hometown Semporna, Sabah, and my interests.">
+  <title>Home | Me, My Hometown & Interests</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">little <span>stories.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html" class="active" aria-current="page">Home</a>
+<a href="about.html" class="" >About Me</a>
+<a href="hometown.html" class="" >My Hometown</a>
+<a href="hobbies.html" class="" >Interests</a></nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Welcome to my little corner</span>
+        <h1>Me, My Hometown <em>&amp; Interests</em></h1>
+        <p class="lead">Hello! Welcome to my personal website. This is a little space where I share who I am, the beautiful place I call home, and the simple things that make me happy.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="about.html">Get to know me</a>
+          <a class="btn btn-soft" href="hometown.html">Explore my hometown</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=85" alt="Soft blue ocean waves under natural sunlight">
+        <div class="art-label">A story of me, my place &amp; my passions ✿</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="eyebrow">A quick introduction</span>
+        <h2>Get to know my world</h2>
+        <p>Every person has a story. Here are three little parts of mine. Choose a section below to explore more.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-icon">♡</div>
+          <h3>About Me</h3>
+          <p class="muted">A short introduction to my background, personality and the person I am becoming.</p>
+          <a class="btn btn-soft" href="about.html">Read more →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">⌖</div>
+          <h3>My Hometown</h3>
+          <p class="muted">Discover Semporna, Sabah — a coastal destination known for its islands and beautiful sea.</p>
+          <a class="btn btn-soft" href="hometown.html">Explore →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">✧</div>
+          <h3>My Interests</h3>
+          <p class="muted">The activities I enjoy in my free time: reading, music, singing and drawing.</p>
+          <a class="btn btn-soft" href="hobbies.html">Discover →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="banner">
+      <h2>Small things make life beautiful.</h2>
+      <p>Thank you for visiting my website. I hope you enjoy getting to know a little more about me!</p>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>© 2026 My Personal Website</span>
+      <span>Made with ♡ and a little creativity</span>
+    </div>
+  </footer>
+  <button class="back-top" type="button" aria-label="Back to top">↑</button>
+
+<script>
+  const menuButton = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuButton && navLinks) {
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+  const backTop = document.querySelector('.back-top');
+  if (backTop) backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+
+</body>
+</html>
